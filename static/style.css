@@ -1,0 +1,85 @@
+
+body{
+    background: url(https://t4.ftcdn.net/jpg/04/26/52/71/360_F_426527111_59QersN3ayDJ7Sfa5qwnKkp4l1O5tuAp.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    backdrop-filter: blur(50px);
+    margin-bottom: 100px;
+    width:100%;
+}
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+header input{
+    margin-right: 20px;
+    width:20vw;
+    height:3vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav-bar a{
+    margin:10px;
+    padding:2px;
+    text-decoration: none;
+    color:black
+}
+.nav-bar ul{
+    list-style: none;
+    margin-top:10px;
+}
+header input:hover{
+    cursor:pointer;
+}
+
+.nav-bar a:hover{
+    cursor: pointer;
+}
+
+.form{
+    margin:50px 440px;
+    padding:30px;
+    height: 760px;
+    width:400px;  
+    backdrop-filter: blur(100px); 
+    border: 2px solid black;
+    transition: height .1s ease;
+}
+
+.form.extend{
+    height:660px;
+}
+.form.reduce{
+    height:660px;
+}
+.form.reduce.extend{
+    height:560px;
+}
+.form input{
+    margin:10px;
+    padding: 2px;
+}
+
+
+.submit{
+    color: white;
+    background-color: rgb(60, 126, 157);
+    margin-top:10px ;
+}
+
+.slidecontainer{
+    width:100%;
+}
+
+.slider{
+    opacity: 0.7;
+}
+.slider:hover{
+    opacity: 1;
+}
+
