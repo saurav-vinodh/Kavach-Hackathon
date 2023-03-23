@@ -22,7 +22,8 @@
         <input type="text" class="search" placeholder="Search">
     </header>
     <div class=" container main justify-center align-center text-center" id="bod-cen">
-        <form class=" form  extend align-center justify-center " id="form-change" method="POST" action="">
+        <form class=" form  extend align-center justify-center " id="form-change" method="post" action="/">
+            {% csrf_token %}
             <label for="contact-owner">Do you want to enter an Email or Phone number?</label>
             <br>
             <br>
