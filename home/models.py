@@ -9,10 +9,9 @@ class Entry(models.Model):
     source = models.CharField(max_length=200)
     weight= models.IntegerField(default=1)
     date = models.DateTimeField(auto_now_add=True)
-    userid = models.AutoField(primary_key=True)
+    userid = models.CharField(max_length=200, default='Saurav')
     risk_score = models.IntegerField()
     spam = models.IntegerField()
-
     
     class Meta:
         unique_together=('userid', 'contact',)

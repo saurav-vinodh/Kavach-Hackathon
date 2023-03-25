@@ -36,7 +36,7 @@
             <br>
             <label for="contact">Enter Contact : </label>
             <br>
-            <input type="email" class="search" id="contact_number" required>
+            <input type="email" class="search" id="contact_number" name="contact_number"required>
             <br><br>
             <label for="contact-owner">Contact belongs to a Company/Person?</label>
             <br>
@@ -51,7 +51,7 @@
             <div id="person-name" class="active">
             <label for="name">Enter Name : </label>
             <br>
-            <input type="text" class="search" id="name" required="required" >
+            <input type="text" class="search" id="name" name="name" required="required" >
             <br><br>
             </div>
             <div id="company-name" class="active">
@@ -63,16 +63,16 @@
             <label for="spam">Is the Entered contact a spam?</label>
             <br>
             <br>
-            <input type="radio" id="spam-yes" name="spam-select" value="yes">
+            <input type="radio" id="spam-yes" name="spam-yes" value="yes">
             <label for="spam-yes">Yes</label>
-            <input type="radio" id="spam-NO" name="spam-select" value="no">
+            <input type="radio" id="spam-NO" name="spam-NO" value="no">
             <label for="spam-no">No</label>
             <br>
             <br>
             <div class="slidecontainer" id="slide">
                 <label for="myRange">Estimated Risk</label>
                 <br>
-                <input type="range" min="1" max="10" value="5" class="slider" id="myRange" >
+                <input type="range" min="1" max="10" value="5" class="slider" id="myRange" name="myRange" >
                 <p>Value:<br><span id="demo"></span></p>
             </div>
             <button type="submit" class="submit">Submit</button>
