@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="util.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Query-Page</title>
+</head>
+<body>
+    <header class="flex" id="myHeader">
+        <nav class="flex nav-bar">
+           <ul class="flex justify-center align-center"> 
+            <li><a href="file:///C:/Other%20web-projects/Project%201/page.html">Home</a></li>
+            <li><a href="file:///C:/Other%20web-projects/Project%201/page.html">Back</a></li>
+            <li><a href="#">Options</a></li>
+           </ul>
+        </nav>
+        <input type="text" class="search" placeholder="Search">
+    </header>
+    <form class="search-div justify-center align-center text-center form" id="form-change">
+        <label for="contact-owner">Do you want to check an Email or Phone number?</label>
+        <br>
+        <br>
+        <select name="--select--" id="contact-type" required >
+            <option value="">--Select--</option>
+            <option value="email" id="mail">Email</option>
+            <option value="phone" id="phn">Phone No.</option>
+            <option value="sms-o" id="sms">SMS</option>
+        </select>
+        <br>
+        <br>
+        <label for="contact">Enter Contact : </label>
+        <br>
+        <input type="email" class="search" id="contact_number" required>
+        <br><br>
+        <div id="mail-details">
+            <label for="subject">Enter Subject of Email : </label>
+            <br>
+            <input type="text" class="search" id="subject" name="subject" required="required ">
+            <br><br>
+            <label for="mail-body">Enter Body of Email : </label>
+            <br>
+            <input type="text" class="search" id="mail-body" name="mail-body" required="required ">
+            <br><br>
+        </div>
+        <div id="sms-details">
+            <label for="sms">Enter SMS recieved : </label>
+            <br>
+            <input type="text" class="search" id="sms" name="sms" required="required ">
+        <br><br>
+        </div>
+        <div id="after-sub" class="active">
+            <label for="spam-check">Spam</label><br>
+            <input type="text" id="spam-check" required readonly>
+            <br><br>
+            <label for="risk-score">Risk Score</label><br>
+            <input type="text" id="risk-score" readonly required>
+            <br>
+        </div>
+        <button type="button" id="sub">Submit</button>
+    </form>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
