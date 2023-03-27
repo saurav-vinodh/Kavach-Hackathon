@@ -37,8 +37,9 @@ def home(request):
     return render(request, 'page.html')
 
 def page2(request):
+    
     if request.method == 'POST':
-
+        
         input_contact = request.POST.get('contact_number')
         print('Testing')
         print(input_contact)
@@ -52,5 +53,7 @@ def page2(request):
         print(riskscore)
         context={'riskscore':riskscore}
         return render(request, 'page2.html', context)
-        
+    
+    
+    print("test")
     return render(request, 'page2.html')
