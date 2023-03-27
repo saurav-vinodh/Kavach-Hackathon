@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-{% load static %}
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'util.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'Input/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'Input/util.css' %}" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -38,6 +38,22 @@
             <br>
             <input type="email" class="search" id="contact_number" name="contact_number"required>
             <br><br>
+            <div id="mail-details">
+                <label for="subject">Enter Subject of Email : </label>
+                <br>
+                <input type="text" class="search" id="subject" name="subject" required="required ">
+                <br><br>
+                <label for="mail-body">Enter Body of Email : </label>
+                <br>
+                <input type="text" class="search" id="mail-body" name="mail-body" required="required ">
+                <br><br>
+            </div>
+            <div id="sms-details">
+                <label for="sms">Enter SMS recieved : </label>
+                <br>
+                <input type="text" class="search" id="sms" name="sms" required="required ">
+            <br><br>
+            </div>
             <label for="contact-owner">Contact belongs to a Company/Person?</label>
             <br>
             <br>
@@ -65,7 +81,7 @@
             <br>
             <input type="radio" id="spam-yes" name="spam-yes" value="yes">
             <label for="spam-yes">Yes</label>
-            <input type="radio" id="spam-NO" name="spam-NO" value="no">
+            <input type="radio" id="spam-NO" name="spam-yes" value="no">
             <label for="spam-no">No</label>
             <br>
             <br>
@@ -79,7 +95,7 @@
         </form>
         <p></p>
     </div>
-    <script src="{% static 'entry.js' %}"></script>
+    <script src="{% static 'Input/entry.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

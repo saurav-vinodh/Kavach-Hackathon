@@ -29,3 +29,19 @@ def home(request):
 
 
     return render(request, 'page.html')
+
+def page2(request):
+    if request.method == 'POST':
+
+        input_contact = request.POST.get('contact_number')
+        obj=Entry.objects.filter(contact=input_contact)
+        risknum=0
+        count=0
+        for i in obj:
+            risknum=(i.weight*i.risk_score)+risknum
+            count=count+i.weight
+        riskscore=risknum/count
+        context={'riskscore':riskscore}
+        
+        print(risknum/count)
+    return render(request, 'page2.html')
