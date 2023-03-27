@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="util.css" rel="stylesheet" type="text/css">
+    <link href="{% static 'Viewing/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'Viewing/util.css' %}" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Query-Page</title>
 </head>
@@ -21,7 +21,8 @@
         </nav>
         <input type="text" class="search" placeholder="Search">
     </header>
-    <form class="search-div justify-center align-center text-center form" id="form-change">
+    <form class="search-div justify-center align-center text-center form" id="form-change" method="post" action="/">
+        {% csrf_token %}
         <label for="contact-owner">Do you want to check an Email or Phone number?</label>
         <br>
         <br>
@@ -58,12 +59,12 @@
             <input type="text" id="spam-check" required readonly>
             <br><br>
             <label for="risk-score">Risk Score</label><br>
-            <input type="text" id="risk-score" readonly required>
+            <input type="text" id="risk-score" placeholder={{context.riskscore}} readonly>
             <br>
         </div>
-        <button type="button" id="sub">Submit</button>
+        <button type="submit" id="sub">Submit</button>
     </form>
-    <script src="script.js"></script>
+    <script src="{% static 'Viewing/script.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

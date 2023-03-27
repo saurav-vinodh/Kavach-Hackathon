@@ -1,0 +1,76 @@
+body{
+    background: url(https://t4.ftcdn.net/jpg/04/26/52/71/360_F_426527111_59QersN3ayDJ7Sfa5qwnKkp4l1O5tuAp.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    backdrop-filter: blur(50px);
+    margin-bottom: 100px;
+    width:100%;
+}
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+header input{
+    margin-right: 20px;
+    width:20vw;
+    height:3vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav-bar a{
+    margin:10px;
+    padding:2px;
+    text-decoration: none;
+    color:black
+}
+.nav-bar ul{
+    list-style: none;
+    margin-top:10px;
+}
+header input:hover{
+    cursor:pointer;
+}
+
+.nav-bar a:hover{
+    cursor: pointer;
+}
+
+.search-div{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.form{
+    margin:180px 50px 540px 560px;
+    padding:30px;
+    height: 290px;
+    width:400px;  
+    backdrop-filter: blur(100px); 
+    border: 2px solid black;
+    transition: height .1s ease;
+}
+.form.extend2{
+    height:450px;
+}
+.form.extend3{
+    height:370px;
+}
+.form.extend2.extend{
+    height:560px;
+}
+.form.extend3.extend{
+    height:470px;
+}
+.form.extend{
+    height:400px;
+}
+
+.act{
+    background-color: black;
+}

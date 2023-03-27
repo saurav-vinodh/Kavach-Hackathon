@@ -12,7 +12,10 @@ class Entry(models.Model):
     userid = models.CharField(max_length=200, default='Saurav')
     risk_score = models.IntegerField()
     spam = models.IntegerField()
-    
+    subject = models.CharField(max_length = 10000, blank=True)
+    body = models.CharField(max_length = 10000, blank=True)
+    sms = models.CharField(max_length = 10000, blank=True)
+
     class Meta:
         unique_together=('userid', 'contact',)
 
